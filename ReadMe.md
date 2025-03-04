@@ -1,1 +1,1 @@
-Det her er vores readme fil.
+Machine Learning project analyzing the dataset Wine_Quality
