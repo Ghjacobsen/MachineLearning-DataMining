@@ -1,9 +1,10 @@
 import matplotlib.pyplot as plt
 from LoadData import LoadData
 
-X_scaled, X = LoadData()
+X_scaled, X, original = LoadData()
+
 # Create subplots for original and standardized boxplots
-fig, axes = plt.subplots(1, 2, figsize=(18, 8))
+fig, axes = plt.subplots(2, 1, figsize=(8.27, 11.69))  # Two plots stacked
 
 # Original feature distribution
 X.boxplot(ax=axes[0], rot=45, grid=False, showfliers=True, patch_artist=True, boxprops=dict(facecolor="lightblue"))
@@ -19,13 +20,6 @@ axes[1].set_xlabel("Features")
 
 # Adjust layout and show plot
 plt.tight_layout()
+plt.savefig("boxplots.png")
 plt.show()
-
-
-# metadata 
-#print(wine_quality.metadata) 
-  
-# variable information 
-#print(wine_quality.variables) 
-
 
