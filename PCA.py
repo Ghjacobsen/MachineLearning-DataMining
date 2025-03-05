@@ -10,7 +10,7 @@ X_scaled, X, y_quality, original = LoadData()
 y_quality = np.array(y_quality).flatten()
 
 # Perform PCA
-pca = PCA(n_components=len(X_scaled.columns))  # Full number of components
+pca = PCA(n_components=len(X_scaled.columns))
 X_pca = pca.fit_transform(X_scaled)
 
 # 2. Explained Variance Plot
@@ -31,7 +31,7 @@ components_df = pd.DataFrame(
     index=[f"PC{i+1}" for i in range(num_components_to_plot)]
 )
 
-# 1. **Plot the First 5 Principal Components in Terms of Attributes**
+# 1. Plot the First 5 Principal Components in Terms of Attributes
 fig, ax = plt.subplots(figsize=(8, 6))
 sns.heatmap(components_df, cmap="coolwarm", center=0, annot=True, fmt=".2f", xticklabels=X_scaled.columns, yticklabels=components_df.index)
 ax.set_title("PCA Component Loadings (First 5 PCs)")

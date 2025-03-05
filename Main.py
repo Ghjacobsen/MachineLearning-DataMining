@@ -4,7 +4,7 @@ from LoadData import LoadData
 X_scaled, X, original = LoadData()
 
 # Create subplots for original and standardized boxplots
-fig, axes = plt.subplots(2, 1, figsize=(8.27, 11.69))  # Two plots stacked
+fig, axes = plt.subplots(2, 1, figsize=(8.27, 11.69))
 
 # Original feature distribution
 X.boxplot(ax=axes[0], rot=45, grid=False, showfliers=True, patch_artist=True, boxprops=dict(facecolor="lightblue"))
