@@ -1,1 +1,1 @@
-Machine Learning project analyzing the dataset for Exercise & Calories.
+Machine Learning project analyzing the dataset Wine_Quality
