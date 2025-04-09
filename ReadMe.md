@@ -1,1 +1,1 @@
-Machine Learning project analyzing the dataset Wine_Quality
+Machine Learning project analyzing the exercise dataset.
